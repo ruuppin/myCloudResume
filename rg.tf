@@ -3,3 +3,6 @@ resource "azurerm_resource_group" "resume_resources" {
   location = var.locationweu
   
 }
+
+## Tags
+// Tags for all resources
