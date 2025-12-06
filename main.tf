@@ -7,15 +7,6 @@ terraform {
   }
 }
 
-backend "remote" {
-  # The name of your Terraform Cloud organization.
-  organization = "justniikupitaa"
-
-  workspaces {
-    name = "myCloudResume"
-
-  }
-}
 
 provider "azurerm" {
   features {}
