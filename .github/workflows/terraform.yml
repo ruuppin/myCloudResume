@@ -15,16 +15,15 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./myCloudResume
-
+        working-directory: .
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v6
 
     # Install the preferred version of Terraform CLI 
     - name: Setup Terraform
-      uses: hashicorp/setup-terraform@v1
+      uses: hashicorp/setup-terraform@v3
       with:
         terraform_version: 1.0.10
 
@@ -56,7 +55,7 @@ jobs:
     # Add a comment to pull requests with plan results
     - name: add-plan-comment
       id: comment
-      uses: actions/github-script@v3
+      uses: actions/github-script@v8
       if: github.event_name == 'pull_request'
       env:
         PLAN: "terraform\n${{ steps.plan.outputs.stdout }}"
