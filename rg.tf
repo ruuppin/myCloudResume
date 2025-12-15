@@ -4,5 +4,11 @@ resource "azurerm_resource_group" "resume_resources" {
   
 }
 
+resource "azurerm_resource_group" "resume_resources" {
+  name     = "rg-test"
+  location = var.locationweu
+  
+}
+
 ## Tags
 // Tags for all resources
