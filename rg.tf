@@ -3,15 +3,3 @@ resource "azurerm_resource_group" "resume_resources" {
   location = var.locationweu
   
 }
-resource "azurerm_resource_group" "cxcx" {
-  name     = "asdsad"
-  location = var.locationweu
-  
-}
-
-
- resource "azurerm_resource_group" "cdsdxcx" {
-  name     = "asdsdadsad"
-  location = var.locationweu
-  
-}
