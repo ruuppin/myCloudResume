@@ -10,4 +10,8 @@ resource "azurerm_resource_group" "cxcx" {
 }
 
 
- 
+ resource "azurerm_resource_group" "cdsdxcx" {
+  name     = "asdsdadsad"
+  location = var.locationweu
+  
+}
